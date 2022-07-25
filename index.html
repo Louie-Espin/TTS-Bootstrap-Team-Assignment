@@ -9,6 +9,29 @@
     <!--TODO: missing main text within carousel -->
     <!--TODO: missing bottom arrow within carousel -->
     <!--TODO: missing Collected banner -->
+    <style>
+
+        .thumbnail { 
+        top:-50px; 
+        left:-35px; 
+        display:block; 
+        z-index:999; 
+        cursor: pointer; 
+        -webkit-transition-property: all; 
+        -webkit-transition-duration: 0.3s; 
+        -webkit-transition-timing-function: ease; 
+        } 
+
+        /*change the number below to scale to the appropriate size*/ 
+        .thumbnail:hover { 
+        transform: scale(1.2); 
+
+        }
+        .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    </style>
 </head>
 <!--Changed Body style to black 7-24-2022 Sam L.-->
 <body style="background-color:black">
@@ -114,37 +137,45 @@
         </section>
 
         <!--Instagram Photo Grid-->
-        <section id="ig_grid" style="align-items: center; padding-left:85px">
-            <div class="insta_grid" style="width: 18rem;">
-                <a href="https://www.instagram.com/p/CgPKS7wu3gy/"><img src="media/294642354_344514117852962_5248522892374381354_n.jpg" width="100%" height="181px">
-                  </a>
-              </div>
-              <div class="insta_grid" style="width: 18rem">
-                <a href="https://www.instagram.com/p/CfrEbvSux1G/"><img src="media/292055429_307290134871206_8100149561821158099_n.jpg" width="100%" height="181px">
-                  </a>
-              </div>
-              <div class="insta_grid" style="width: 18rem">
-                <a href="https://www.instagram.com/p/CciITv5OeFq/"><img src="media/278755034_183093290720714_9163583459553869815_n.jpg" width="100%" height="181px">
-                  </a>
-              </div>
-              <div class="insta_grid" style="width: 18rem">
-                <a href="https://www.instagram.com/p/CfZAl3SOgZk/"><img src="media/290984546_5073187899396946_5237069034785682145_n.jpg" width="100%" height="181px">
-                  </a>
-              </div>
-              <div class="insta_grid" style="width: 18rem">
-                <a href="https://www.instagram.com/p/CedtXWPutZI/"><img src="media/286195996_438405654303208_7537814586367439715_n.jpg" width="100%" height="181px">
-                  </a>
-              </div>
-              <div class="insta_grid" style="width: 18rem">
-                <a href="https://www.instagram.com/p/CeBl1nTOOJM/"><img src="media/284122836_163537709482003_876037791044651220_n.jpg" width="100%" height="181px">
-                  </a>
-              </div>
+        <section id="ig_grid" style="align-items: center;" display="grid";>
+            <div class = "wrapper">
+                <div class="thumbnail" style="width: 18rem;">
+                    <a href="https://www.instagram.com/p/CgPKS7wu3gy/"><img src="media/294642354_344514117852962_5248522892374381354_n.jpg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="https://www.instagram.com/p/CfrEbvSux1G/"><img src="media/292055429_307290134871206_8100149561821158099_n.jpg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="https://www.instagram.com/p/CciITv5OeFq/"><img src="media/278755034_183093290720714_9163583459553869815_n.jpg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="https://www.instagram.com/p/CfZAl3SOgZk/"><img src="media/290984546_5073187899396946_5237069034785682145_n.jpg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="https://www.instagram.com/p/CedtXWPutZI/"><img src="media/286195996_438405654303208_7537814586367439715_n.jpg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="https://www.instagram.com/p/CeBl1nTOOJM/"><img src="media/284122836_163537709482003_876037791044651220_n.jpg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="#"><img src="media/food1.jpeg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="#"><img src="media/food2.jpeg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="#"><img src="media/food3.jpeg" width="100%" height="181px"></a>
+                </div>
+                <div class="thumbnail" style="width: 18rem">
+                    <a href="#"><img src="media/food4.jpg" width="100%" height="181px"></a>
+                </div>
+            </div>
         </section>
         <!--Collected Banner-->
         <section class="collected-banner">
             <div class="text-center">
                 <a href="https://www.collected.com/">
-                  <img src="./media/collected-banner.jpg" class="img-fluid" alt="Collected banner" width=350px; height=350px; style="background-position: cover; padding-bottom: 75px;";>
+                  <img src="./media/collected-banner.jpg" class="img-fluid" alt="Collected banner" width=350px; height=350px; style="background-position: cover; padding-bottom: 75px; padding-top:40px";>
                 </a>
             </div>
         </section>
